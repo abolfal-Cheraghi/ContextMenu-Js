@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: cursive ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+}
+
+
+::selection{
+    background: rgba(137, 43, 226, 0.612);
+    color: white;
+}
+
+.con{
+    width: 300px;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    /* box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    visibility: hidden;
+    position:absolute ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.menu .item{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menu .item i{
+    padding-right: 10px;
+}
+
+.menu .item:hover{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.menu .setting{
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    padding-top:10px ;
+}
+
+.menu .share{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .share .share-menu{
+    position: absolute;
+    background-color: #fff;
+    left: 270px;
+    width: 180px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    visibility: hidden;
+}
+
+.menu .share:hover .share-menu{
+    visibility: visible;
+}
+
+
+
